@@ -46,6 +46,9 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 
+# Enable ArchiDroid Optimizations 
+USE_ARCH_OPTIMIZATIONS=true
+
 # Conserve memory in the Dalvik heap
 # Details: https://github.com/CyanogenMod/android_dalvik/commit/15726c81059b74bf2352db29a3decfc4ea9c1428
 TARGET_ARCH_LOWMEM := true
