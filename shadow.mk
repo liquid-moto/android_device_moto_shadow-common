@@ -134,3 +134,8 @@ PRODUCT_LOCALES := en_US en_GB en_IN fr_FR it_IT de_DE es_ES hu_HU uk_UA zh_CN z
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+# Missing LibOMX files
+PRODUCT_COPY_FILES += \
+    vendor/motorola/shadow-common/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
+    vendor/motorola/shadow-common/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
+    vendor/motorola/shadow-common/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib//libOMX.TI.mp4.splt.Encoder.so \
