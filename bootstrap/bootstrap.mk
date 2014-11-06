@@ -25,13 +25,16 @@ PRODUCT_COPY_FILES += \
 	${bm_device}/bootstrap/modules/hbootmod.ko:system/bootstrap/modules/hbootmod.ko \
 	${bm_device}/bootstrap/2nd-boot/hboot.cfg:system/bootstrap/2nd-boot/hboot.cfg \
 	${bm_device}/bootstrap/2nd-boot/hboot_recovery.cfg:system/bootstrap/2nd-boot/hboot_recovery.cfg \
+    ${bm_device}/bootstrap/2nd-boot/ramdisk:system/bootstrap/2nd-boot/ramdisk \
+    ${bm_device}/bootstrap/2nd-boot/ramdisk-recovery:system/bootstrap/2nd-boot/ramdisk-recovery \
+    ${bm_device}/bootstrap/2nd-boot/zImage:system/bootstrap/2nd-boot/zImage \
 	${bm_device}/bootstrap/2nd-boot/zImage-recovery:system/bootstrap/2nd-boot/zImage-recovery \
 	$(bm_device)/twrp.fstab:recovery/root/etc/twrp.fstab \
 	${bm_device}/bootstrap/modules/jbd2.ko:system/bootstrap/modules/jbd2.ko \
 	${bm_device}/bootstrap/modules/ext4.ko:system/bootstrap/modules/ext4.ko \
 	${bm_device}/bootstrap/images/background-def.png:system/bootstrap/images/background-def.png \
 	${bm_device}/bootstrap/images/background-blank.png:system/bootstrap/images/background-blank.png \
-	$(OUT)/ramdisk-recovery.img:system/bootstrap/2nd-boot/ramdisk-recovery \
-	$(OUT)/ramdisk.img:system/bootstrap/2nd-boot/ramdisk \
-	$(OUT)/kernel:system/bootstrap/2nd-boot/zImage \
+#	$(OUT)/ramdisk-recovery.img:system/bootstrap/2nd-boot/ramdisk-recovery \
+#	$(OUT)/ramdisk.img:system/bootstrap/2nd-boot/ramdisk \
+#	$(OUT)/kernel:system/bootstrap/2nd-boot/zImage \
 
